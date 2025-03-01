@@ -1,7 +1,7 @@
 :root{
-  --main-blue:#006931;
-  --main-blue-light:#006931;
-  --main-footer:#ebeaea;  
+  --main-blue:var(--success);
+  --main-blue-light:var(--success);
+  --main-footer:#f4f4f4;  
   --main-light:#ffffff;  
   --bs-footer-text:#000000;
   --bs-footer-text-main:#232323;
@@ -12,6 +12,7 @@
 }
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700");
   *{
+    scroll-behavior:smooth;
     font-family:var(--regular);
   }
   #logo_img{
@@ -277,6 +278,7 @@
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
     position: relative;
+    z-index:2000;
     padding: 0 20px 20px 20px;
     height: calc(100vh - 52px);
     padding-bottom: 150px; }
@@ -746,7 +748,7 @@ h1, h2, h3, h4 {
 
 .block__87154 {
   position: relative;
-  background: #f8f9fa;
+  background: var(--bg-light);
   padding: 30px;
   margin-bottom: 2rem;
   border-radius: 7px; }
